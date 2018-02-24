@@ -1,0 +1,156 @@
+/*Body*/
+body {
+ padding: 0;
+ margin: 0;
+}
+
+.text {
+	font-family: 'Hind', sans-serif;
+}
+
+/*Header*/
+header {
+	display: grid;
+ 	grid-template-columns: repeat(2, 50%);
+ }
+
+ #login-section {
+ 	display: flex;
+ 	justify-content: flex-end;
+ 	margin-right: 2.5%;
+ 	align-items: center;
+ 	color: #1376B8;
+}
+
+#konexio-logo {
+	cursor: pointer;
+	margin-left: 2%;
+	height: 55px;
+}
+
+#login-button:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/*Main image section*/
+#main-image {
+	width: 100%;
+	height: 559px;
+}
+
+#overlay {
+	background-color:rgba(0, 0, 0, 0.25);
+	position: absolute;
+	width: 100%;
+ 	z-index: 1;
+ 	top: 57px;
+ 	height: 559px;
+
+ 	display: grid;
+ 	grid-template-rows: 25% 20% 55%;
+
+ 	/*display: flex;
+	justify-content: center;*/
+	/*border: solid;*/
+}
+
+#arrow {
+/*	color: #1376B8;*/
+	color: white;
+/*	border: solid;*/
+	display: flex;
+	justify-content: center;
+	margin-top: auto;
+	align-self: center;
+	margin-bottom: 0px;
+	animation: arrow-animate 0.5s alternate infinite;
+}
+
+@keyframes arrow-animate {
+	0% {}
+	100% {margin-bottom: 10px;}
+}
+
+/*Bottom section*/
+#bottom-section {
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+}
+
+.titles {
+	font-size: 2em;
+	color: #1376B8;
+}
+
+.bottom {
+	border-width: .1px;
+	border-color: gray;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 25px;
+}
+
+.bottom p {
+	text-align: center;
+	padding: 0px;
+}
+
+.signupbutton {
+	width: 150px;
+	height: 65px;
+	color: white;
+	font-size: 1.2em;
+	background-color: #1376B8;
+	border-radius: 7px;
+	display: flex;
+	border: solid #0f5e93 3px;
+	justify-content: center;
+	align-content: center;
+/*	transition: background-color, color 3s ease;*/
+}
+
+.signupbutton:hover {
+	color: #1376B8;
+	background-color: white;
+	cursor: pointer;
+}
+
+footer {
+	text-align: center;
+}
+
+footer {
+	border-top: solid 1px #0f5e93;
+	padding: 5px;
+}
+
+footer a {
+	text-decoration: none;
+	color: black;
+}
+
+#inspirational-text {
+	display: flex;
+	justify-content: center;
+	font-size: 60px;
+	color: white;
+/*	overflow: hidden;*/
+}
+
+#quote {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	font-size: 20px;
+	color: white;
+}
+
+@media only screen and (max-width: 800px) {
+	#bottom-section {
+		grid-template-columns: 100%;
+		grid-template-rows: repeat(2, 50%);
+	}
+}
