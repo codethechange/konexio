@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <link rel="icon" type="image.png" href="./images/k.png">
+    <!-- Link to styles.css -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <style>
+  .container {
+    margin: 0;
+  }
+  </style>
+  <body>
+    <!--Navigation bar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!--<a class="navbar-brand" href="#">Konexio</a>-->
+    <a href="#" class="navbar-left"><img id="konexio-logo" src="./images/konexio_logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Seek a mentor/student</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Messages/Notifications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Help</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Preferences</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+      Signed in as ______ &nbsp; <a href="#">ENG</a> | <a href="#">FR</a>
+      </span>
+    </div>
+  </nav>
+
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <img src="./images/person_icon.png" class="float-left" alt="Person Image" ></img>
+      </div>
+      <div class="col-9">
+        <h2>WHATS NEW?</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum, turpis sit amet pretium hendrerit, mi orci gravida turpis, vel facilisis erat justo non diam. Cras interdum commodo lacus vitae volutpat. Nunc tempor, nunc ac aliquam vehicula, elit mauris maximus leo, id posuere est elit sed est. Integer ac semper lorem, sit amet scelerisque tortor. Cras quis metus sit amet nisl malesuada feugiat eu a massa. Nam erat leo, iaculis in metus eget, commodo fermentum lorem. Fusce consequat erat et faucibus lobortis. Aliquam non velit id lectus rhoncus bibendum sed at purus. Praesent facilisis et justo vel tristique. Aenean interdum vel urna et blandit. Phasellus sapien ante, efficitur eget justo in, ultrices pretium eros. Integer condimentum, dolor eget porttitor aliquam, est dolor convallis risus, eget suscipit lectus sapien et nibh. Duis quis hendrerit risus. Quisque in augue in quam ultrices cursus semper id orci.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="container">
+    <h2>PREFERENCES</h2>
+    <form>
+     <div class="form-row">
+       <div class="form-group col-md-6">
+         <label for="fname">First Name</label>
+         <input type="text" class="form-control" id="fname" placeholder="First Name">
+       </div>
+       <div class="form-group col-md-6">
+         <label for="lname">Last Name</label>
+         <input type="text" class="form-control" id="lname" placeholder="Last Name">
+       </div>
+     </div>
+     <div class="form-group">
+       <label for="phoneNum">Phone Number</label>
+       <input type="text" class="form-control" id="phoneNum" placeholder="Area Code - Phone Number">
+     </div>
+     <div class="form-group">
+      <label for="emailAddr">Email address</label>
+      <input type="email" class="form-control" id="emailAddr" aria-describedby="emailHelp" placeholder="Email">
+     </div>
+     <div class="form-group">
+       <label for="age">Age</label>
+       <input type="text" class="form-control" id="age" placeholder="Age">
+     </div>
+     <div class="form-group">
+     <label for="gender">Gender:</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+       </select>
+     </div>
+     <label for="person">I am a:</label>
+     <div class="form-check">
+       <input class="form-check-input" type="radio" name="typePerson" id="mentor" value="mentor">
+       <label class="form-check-label" for="mentor">
+         mentor
+       </label>
+     </div>
+     <div class="form-check">
+       <input class="form-check-input" type="radio" name="typePerson" id="student" value="student">
+       <label class="form-check-label" for="student">
+         student
+       </label>
+     </div>
+     <br>
+     <div class="form-group">
+      <label for="resume">Upload Resume</label>
+      <input type="file" class="form-control-file" id="resume">
+    </div>
+     <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+  </div>
+  </body>
+</html>
