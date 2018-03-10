@@ -4,7 +4,7 @@ const hbs = require("hbs");
 const path = require("path");
 const axios = require("axios");
 
-// const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 const app = express();
 
@@ -18,6 +18,6 @@ app.get("/", (req, res) => {
   res.render("index.hbs");
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log("Server up on port 3000");
 })
