@@ -21,6 +21,12 @@ const port = process.env.PORT || 3000;
 
 const app = express();
 
+app.use(bodyParser.json());
+
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
+
 app.set("views", path.join(__dirname, "views"));
 //default hbs file
 app.set("view engine", "hbs");
@@ -39,9 +45,9 @@ app.get("/form.hbs", (req, res) => {
   res.render("form.hbs");
 })
 
-// app.post("/form.hbs", (req, res) => {
-//     console.log(req.body);
-// });
+app.post("/form.hbs", (req, res) => {
+    console.log(req.body);
+});
 
 
 app.listen(port, () => {
