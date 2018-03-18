@@ -39,9 +39,9 @@ app.get("/form.hbs", (req, res) => {
   res.render("form.hbs");
 })
 
-app.post("/form.hbs", (req, res) => {
-    console.log(req.body);
-});
+// app.post("/form.hbs", (req, res) => {
+//     console.log(req.body);
+// });
 
 
 app.listen(port, () => {
