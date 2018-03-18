@@ -8,6 +8,10 @@ body {
 	font-family: 'Hind', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*Header*/
 header {
 	display: grid;
