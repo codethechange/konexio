@@ -43,12 +43,14 @@ app.get("/", (req, res) => {
 //
 app.get("/form.hbs", (req, res) => {
   res.render("form.hbs");
-  console.log("Hello");
+  // console.log("Hello");
 })
 
 app.post("/form.hbs", (req, res) => {
     // console.log(req.body);
-    console.log("HELLO");
+    // console.log("HELLO");
+    const body = req.body;
+    res.send(`You sent: ${body} to Express`);
 });
 
 
