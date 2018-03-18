@@ -43,6 +43,7 @@ app.get("/", (req, res) => {
 //
 app.get("/form.hbs", (req, res) => {
   res.render("form.hbs");
+  console.log("Hello");
 })
 
 app.post("/form.hbs", (req, res) => {
