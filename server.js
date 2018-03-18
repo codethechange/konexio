@@ -46,7 +46,8 @@ app.get("/form.hbs", (req, res) => {
 })
 
 app.post("/form.hbs", (req, res) => {
-    console.log(req.body);
+    // console.log(req.body);
+    console.log("HELLO");
 });
 
 
