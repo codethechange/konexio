@@ -4,7 +4,7 @@ const hbs = require("hbs");
 const path = require("path");
 const axios = require("axios");
 //for post
-// const bodyParser = require("body-parser");
+const bodyParser = require("body-parser");
 /**bodyParser.json(options)
  * Parses the text as JSON and exposes the resulting object on req.body.
  */
