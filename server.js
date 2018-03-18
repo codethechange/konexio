@@ -15,16 +15,16 @@ app.set("view engine", "hbs");
 app.use(express.static(path.join(__dirname, "public")))
 
 app.get("/", (req, res) => {
-  res.render("main-page.hbs");
-})
-
-app.get("/profile-page", (req, res) => {
-  res.render("profile-page.hbs");
-})
-
-app.get("/form", (req, res) => {
   res.render("form.hbs");
 })
+
+// app.get("/profile-page", (req, res) => {
+//   res.render("profile-page.hbs");
+// })
+//
+// app.get("/form", (req, res) => {
+//   res.render("form.hbs");
+// })
 
 app.listen(port, () => {
   console.log(`Server up on port ${port}`);
