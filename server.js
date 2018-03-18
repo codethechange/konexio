@@ -4,11 +4,11 @@ const hbs = require("hbs");
 const path = require("path");
 const axios = require("axios");
 //for post
-const bodyParser = require("body-parser");
+// const bodyParser = require("body-parser");
 /**bodyParser.json(options)
  * Parses the text as JSON and exposes the resulting object on req.body.
  */
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 /** bodyParser.urlencoded(options)
  * Parses the text as URL encoded data (which is how browsers tend to send form data from regular forms set to POST)
  * and exposes the resulting object (containing the keys and values) on req.body
