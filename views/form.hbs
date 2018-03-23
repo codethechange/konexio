@@ -234,7 +234,7 @@ body {
   <div class="container">
     <div class="row">
         <div class="col">
-            <form id="msform">
+            <form id="msform" method="post" action="server.js">
                 <!-- progressbar -->
                 <ul id="progressbar">
                     <li class="active">Step 1</li>
@@ -679,12 +679,10 @@ body {
                     <input type="submit" name="submit" class="submit action-button" value="Submit"/>
                     <p>{{body}}</p>
                 </fieldset>
-
             </form>
         </div>
     </div>
   </div>
-
 <script>
 //jQuery time
 var current_fs, next_fs, previous_fs; //fieldsets

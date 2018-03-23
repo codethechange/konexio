@@ -21,7 +21,7 @@ const port = process.env.PORT || 3000;
 
 const app = express();
 
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 
 app.use(bodyParser.urlencoded({
     extended: true
@@ -42,17 +42,17 @@ app.get("/", (req, res) => {
 // })
 //
 app.get("/form.hbs", (req, res) => {
+  console.log("Hello");
   res.render("form.hbs");
-  // console.log("Hello");
 })
 
 app.post("/form.hbs", (req, res) => {
     // console.log(req.body);
     // console.log("HELLO");
     const body = req.body;
+    console.log(bodyParser);
     res.send(`You sent: ${body} to Express`);
 });
-
 
 app.listen(port, () => {
   console.log(`Server up on port ${port}`);
