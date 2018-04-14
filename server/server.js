@@ -29,11 +29,30 @@ app.get("/", (req, res) => {
 
 app.get("/form/new", (req, res) => {
   res.render("newForm.hbs");
+  // res.render("form.hbs");
 })
 
 app.post("/form/new", (req, res) => {
 const newUser = new kfs ({
-  name: req.body.name
+  firstName: req.body.firstName,
+  lastName: req.body.lastName,
+  email: req.body.email,
+  countryOrigin: req.body.countryOrigin,
+  asylumStatus: req.body.asylumq,
+  userAge:req.body.age,
+  gender: req.body.gender,
+  userPhone: req.body.phoneNum,
+  userLang: req.body.languages,
+  userCourse: req.body.course,
+  currentOccupation: req.body.currentOccupation,
+  careerGoals: req.body.careerGoals,
+  educationLevel: req.body.educationLevel,
+  hobbies: req.body.hobbies,
+  wordDescribers: req.body.wordDescribers,
+  skillq1: req.body.skillq1,
+  skillq2: req.body.skillq2,
+  skillq3: req.body.skillq3,
+  skillq4: req.body.skillq4
 })
 newUser.save()
   .then(doc => {
