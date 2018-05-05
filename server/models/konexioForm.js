@@ -1,11 +1,6 @@
 const mongoose = require("mongoose");
 
 // PASSWORD ENCRYPTION
-//http://devsmash.com/blog/password-authentication-with-mongoose-and-bcrypt
-// const mongoose = require('mongoose'),
-//     Schema = mongoose.Schema,
-//     bcrypt = require('bcrypt'),
-//     SALT_WORK_FACTOR = 10;
 
 const konexioFormSchema = mongoose.Schema({
   firstName: {
@@ -20,19 +15,19 @@ const konexioFormSchema = mongoose.Schema({
     minLength: 1,
     trim: true
   },
-  // emailAddress: {
-  //   type: String,
-  //   required: true,
-  //   minLength: 1,
-  //   trim: true,
-  //   unique: true
-  // },
-  // countryOrigin: {
-  //   type: String,
-  //   required: true,
-  //   minLength: 1,
-  //   trim: true
-  // },
+  emailAddress: {
+    type: String,
+    required: true,
+     minLength: 1,
+    trim: true,
+    unique: true
+  },
+  countryOrigin: {
+    type: String,
+    required: true,
+    minLength: 1,
+    trim: true
+  },
   asylumStatus: {
     type: String,
     required: true,
@@ -70,36 +65,36 @@ const konexioFormSchema = mongoose.Schema({
     minLength: 1,
     trim: true
   },
-  // currentOccupation: {
-  //   type: String,
-  //   required: true,
-  //   minLength: 1,
-  //   trim: true
-  // },
-  // careerGoals: {
-  //   type: Mixed,
-  //   required: true,
-  //   minLength: 1,
-  //   trim: true
-  // },
-  // educationLevel: {
-  //   type: String,
-  //   required: true,
-  //   minLength: 1,
-  //   trim: true
-  // },
-  // hobbies: {
-  //   type: String,
-  //   required: true,
-  //   minLength: 1,
-  //   trim: true
-  // },
-  // wordDescribers: {
-  //   type: String,
-  //   required: true,
-  //   minLength: 1,
-  //   trim: true
-  // },
+  currentOccupation: {
+    type: String,
+    required: true,
+    minLength: 1,
+    trim: true
+  },
+  careerGoals: {
+    type: String,
+    required: true,
+    minLength: 1,
+    trim: true
+  },
+  educationLevel: {
+    type: String,
+    required: true,
+    minLength: 1,
+    trim: true
+  },
+  hobbies: {
+    type: String,
+    required: true,
+    minLength: 1,
+    trim: true
+  },
+  wordDescribers: {
+    type: String,
+    required: true,
+    minLength: 1,
+    trim: true
+  },
   skillq1: {
     type: String,
     required: true,

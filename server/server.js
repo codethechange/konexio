@@ -33,10 +33,10 @@ app.get("/form/new", (req, res) => {
 })
 
 app.post("/form/new", (req, res) => {
-const newUser = new kfs ({
+const newUser = new kfs({
   firstName: req.body.firstName,
   lastName: req.body.lastName,
-  email: req.body.email,
+  emailAddress: req.body.email,
   countryOrigin: req.body.countryOrigin,
   asylumStatus: req.body.asylumq,
   userAge:req.body.age,
@@ -56,8 +56,8 @@ const newUser = new kfs ({
 })
 newUser.save()
   .then(doc => {
-    res.redirect("/");
-    // res.send(doc);
+    // res.redirect("/");
+    res.send(doc);
   }, e => {
     res.status(404).send(e);
   })
