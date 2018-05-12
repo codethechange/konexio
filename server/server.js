@@ -56,12 +56,24 @@ const newUser = new kfs({
 })
 newUser.save()
   .then(doc => {
-    // res.redirect("/");
-    res.send(doc);
+    res.redirect("/createAccount");
+    // res.send(doc);
   }, e => {
     res.status(404).send(e);
   })
 });
+
+app.get("/login", (req, res) => {
+  res.render("login.hbs");
+})
+
+app.get("/createAccount", (req, res) => {
+  res.render("createAccount.hbs");
+})
+
+app.post("/createAccount", (req, res) => {
+  res.redirect("/login");
+})
 
 app.listen(port, () => {
   console.log(`Server up on port ${port}`);

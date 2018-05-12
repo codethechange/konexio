@@ -32,6 +32,10 @@ header {
 	height: 55px;
 }
 
+#login-button {
+  color: #1376B8;
+}
+
 #login-button:hover {
 	text-decoration: underline;
 	cursor: pointer;
@@ -50,19 +54,12 @@ header {
  	z-index: 1;
  	top: 57px;
  	height: 559px;
-
  	display: grid;
  	grid-template-rows: 25% 20% 55%;
-
- 	/*display: flex;
-	justify-content: center;*/
-	/*border: solid;*/
 }
 
 #arrow {
-/*	color: #1376B8;*/
 	color: white;
-/*	border: solid;*/
 	display: flex;
 	justify-content: center;
 	margin-top: auto;
@@ -113,7 +110,6 @@ header {
 	border: solid #0f5e93 3px;
 	justify-content: center;
 	align-content: center;
-/*	transition: background-color, color 3s ease;*/
 }
 
 .signupbutton:hover {
@@ -141,7 +137,6 @@ footer a {
 	justify-content: center;
 	font-size: 60px;
 	color: white;
-/*	overflow: hidden;*/
 }
 
 #quote {
@@ -157,4 +152,9 @@ footer a {
 		grid-template-columns: 100%;
 		grid-template-rows: repeat(2, 50%);
 	}
+}
+
+/* SIGN UP SHEET */
+h1 .sign-up-title {
+  color: blue;
 }
