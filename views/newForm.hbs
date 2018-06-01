@@ -9,11 +9,32 @@
     <style media="screen">
 
     #sign-up-title {
-      color: blue;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 25px;
+      border-bottom: solid 1px;
+    }
+
+    body {
+      /* border: solid; */
+      margin-left: 30%;
+      margin-right: 30%;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+
+    #sign-up-button {
+      width: 100%;
+      margin-top: 30px;
+
     }
 
     </style>
-    <h1 id="sign-up-title">Sign Up</h1>
+    <h1 id="sign-up-title">SIGN-UP</h1>
     <form action="/form/new" method="post">
 
       <!-- PART 1 -->
@@ -23,7 +44,7 @@
       <input id="userFirstName" type="text" name="firstName"><br>
 
       <!-- First name -->
-      <label for="userLastName">LastName: </label>
+      <label for="userLastName">Last Name: </label>
       <input id="userLastName" type="text" name="lastName"><br>
 
       <!-- Email Address -->
@@ -33,7 +54,7 @@
       <!-- PART 2 -->
 
       <!-- Country of Origin -->
-      <label for="countryOrigin">Country of Origin </label><br>
+      <label for="countryOrigin">Country of Origin: </label>
        <select id="countryOrigin" type="text" name="countryOrigin">
          <option>Select Country</option>
          <option>Afghanistan</option>
@@ -236,70 +257,70 @@
        </select><br>
 
        <!-- Asylum Status-->
-           <label for="asylumStatus">Asylum Status</label><br>
+           <label for="asylumStatus">Asylum Status: </label>
            <input class= "asylumq" type="radio" name="asylumq" value="Seeker"> Asylum Seeker<br>
            <input class= "asylumq" type="radio" name="asylumq" value="Refugee"> Refugee<br>
 
            <!-- Age -->
-           <label for="userAge">Age</label><br>
+           <label for="userAge">Age: </label>
            <input id="userAge" type="text" name="age"><br>
 
            <!-- Gender -->
-           <label for="gender">Gender</label><br>
+           <label for="gender">Gender: </label>
             <select id="gender" name="gender">
               <option>Male</option>
               <option>Female</option>
-              <option>Other</option>
+              <option selected>Other</option>
               <option>Prefer not to answer</option>
             </select><br>
 
            <!-- Phone Number -->
-           <label for="userPhone">Phone Number</label><br>
+           <label for="userPhone">Phone Number: </label>
            <input id="userPhone" type="text" name="phoneNum"><br>
 
            <!-- Languages Spoken -->
-           <label for="userLang">Languages(s) Spoken: </label><br>
+           <label for="userLang">Languages(s) Spoken: </label>
            <input id="userLang" type="text" name="languages"><br>
 
            <!-- Konexio Course Info -->
-           <label for="userCourse">Konexio Course Enrolled in: </label><br>
+           <label for="userCourse">Konexio Course Enrolled in: </label>
            <input id="userCourse" type="text" name="course"><br>
 
       <!-- PART 3 -->
       <!-- currentOccupation -->
-    <label for="currentOccupation">Are you currently working or studying? </label><br>
+    <label for="currentOccupation">Are you currently working or studying? </label>
     <input class="currentOccupation" type="radio" name="currentOccupation" value="working"> Working?<br>
     <input class="currentOccupation" type="radio" name="currentOccupation" value="studying"> Studying?<br>
 
     <!-- CareerGoals -->
-    <label for="careerGoals">Career goals or other interests: </label><br>
+    <label for="careerGoals">Career goals or other interests: </label>
     <textarea id="careerGoals" rows="4" cols="50" name="careerGoals"></textarea><br>
 
     <!-- educationLevel -->
-    <label for="educationLevel">What is your highest educational qualification? Proffesional?</label><br>
+    <label for="educationLevel">What is your highest educational qualification? Proffesional?</label>
     <textarea id="educationLevel" rows="4" cols="50" name="educationLevel"></textarea> <br>
 
     <!-- hobbies -->
-    <label for="hobbies">Your hobbies:</label><br>
+    <label for="hobbies">Your hobbies:</label>
     <textarea id="hobbies" rows="4" cols="50" name="hobbies"></textarea><br>
 
     <!-- wordDescribers -->
-    <label for="wordDescribers">Three words that describe you:</label><br>
+    <label for="wordDescribers">Three words that describe you:</label>
     <textarea id="wordDescribers" rows="4" cols="50" name="wordDescribers"></textarea><br>
 
       <!-- PART 4 -->
-      <label for="skillq1">Do you feel comfortable using a computer on your own?</label><br>
+      <label for="skillq1">Do you feel comfortable using a computer on your own?</label>
       <input class="skillq1" type="radio" name="skillq1" value="yes">Yes<br>
       <input class="skillq1" type="radio" name="skillq1" value="no">No<br>
 
-      <label for="skillq2">How would you rate your computer skills (on a scale of 1 to 5)</label><br>
+      <label for="skillq2">How would you rate your computer skills (on a scale of 1 to 5)</label>
       <input class="skillq2" type="radio" name="skillq2" value=1>1<br>
       <input class="skillq2" type="radio" name="skillq2" value=2>2<br>
       <input class="skillq2" type="radio" name="skillq2" value=3>3<br>
       <input class="skillq2" type="radio" name="skillq2" value=4>4<br>
       <input class="skillq2" type="radio" name="skillq2" value=5>5<br>
 
-      <label for="skillq3">How would you rate your coding skills</label><br>
+      <label for="skillq3">How would you rate your coding skills</label>
       <input class="skillq3" type="radio" name="skillq3" value="Beginner">Beginner<br>
       <input class="skillq3" type="radio" name="skillq3" value="Basic">Basic<br>
       <input class="skillq3" type="radio" name="skillq3" value="Intermediate">Intermediate<br>
@@ -307,7 +328,7 @@
 
       <label for="skillq4">Why are you seeking a mentor?
         Which skills do you most want him/her to help you develop?
-        What subjects would you like to discuss?</label><br>
+        What subjects would you like to discuss?</label>
       <input class="skillq4" type="checkbox" name="skillq4" value="My coding skills">My coding skills<br>
       <input class="skillq4" type="checkbox" name="skillq4" value="My leadership skills">My leadership skills<br>
       <input class="skillq4" type="checkbox" name="skillq4" value="Topics related to individual development
@@ -321,7 +342,7 @@
       <!-- Add other section -->
 
       <!-- Submit Button -->
-      <input type="submit" value="submit">
+      <input id="sign-up-button" type="submit" value="Sign Up">
 
     </form>
   </body>
