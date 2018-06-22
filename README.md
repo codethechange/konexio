@@ -6,8 +6,8 @@ cd ../konexio
 mongod
 ```
 
-open Robo 3T
-"connect"
+1. open Robo 3T
+1. "connect"
 
 ```
 cd ../konexio
