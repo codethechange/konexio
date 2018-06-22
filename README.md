@@ -1,14 +1,18 @@
 # konexio
 
 ## run locally
-```cd ../konexio
-mongod```
+```
+cd ../konexio
+mongod
+```
 
 open Robo 3T
 "connect"
 
-```cd ../konexio
+```
+cd ../konexio
 npm install
-npm start```
+npm start
+```
 
 http://localhost:3000/
