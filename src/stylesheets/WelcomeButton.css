@@ -1,0 +1,52 @@
+.mentor-button {
+  width: 431px;
+  height: 78px;
+  background-color: #48aee2;
+}
+
+.mentor-button-text {
+  width: 261.5px;
+  height: 78px;
+  font-family: Open Sans, Arial, sans-serif;
+  font-size: 26px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.mentee-button {
+  width: 431px;
+  height: 80px;
+  background-color: #2075bc;
+}
+
+.mentee-button-text {
+  width: 300px;
+  height: 80px;
+  font-family: Open Sans, Arial, sans-serif;
+  font-size: 26px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.15;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.mentor-container {
+    position: fixed;
+    bottom: 9.156em;
+    right: 48.438em;
+    
+}
+
+.mentee-container {
+    position: fixed;
+    bottom: 9.156em;
+    right: 16.313em;
+}
