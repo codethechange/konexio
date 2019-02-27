@@ -1,12 +1,20 @@
 import React, { Component } from 'react';
-export default class SignIn extends Component { 
-  state = { 
+import { SignInButton } from '../components/SignInButton';
+import { LoginText } from '../components/LoginText';
+import { DontHaveAcctButton } from '../components/DontHaveAcctButton';
+import { ForgotPasswordButton } from '../components/ForgotPasswordButton';
+
+export default class SignIn extends Component {
+  state = {
   }
 
-  render () {                                   
+  render () {
       return (
         <div>
-           <h1> This is the login page. </h1>
+        <SignInButton />
+        <LoginText />
+        <DontHaveAcctButton />
+        <ForgotPasswordButton />
         </div>
       )
    }
