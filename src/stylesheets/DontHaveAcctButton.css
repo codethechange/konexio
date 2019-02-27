@@ -1,0 +1,25 @@
+.noacct-button {
+  width: 250px;
+  height: 43px;
+  background-color: #0e67b1;
+}
+
+.noacct-button-text {
+  width: 333px;
+  height: 43px;
+  font-family: Open Sans, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #3fd7e1;
+}
+
+.noacct-container {
+  position: fixed;
+  right:23.5em;
+  bottom: 10.563em;
+}

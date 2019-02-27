@@ -1,0 +1,25 @@
+.signin-button {
+  width: 500px;
+  height: 60px;
+  background-color: #000000;
+}
+
+.signin-button-text {
+  width: 155px;
+  height: 43px;
+  font-family: Open Sans, Arial, sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.signin-container {
+  position: fixed;
+  right:8.063em;
+  bottom: 14.375em;
+}
