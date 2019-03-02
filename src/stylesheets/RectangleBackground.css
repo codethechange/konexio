@@ -1,6 +1,8 @@
 .rectangle-background {
+  position: fixed;
   width: 100vw;
   height: 100vh;
   margin-left: 31em;
   background-color: #0e67b1;
+  z-index: -1;
 }

@@ -43,9 +43,9 @@ class App extends Component {
             exact={true}
             path="/SignIn"
             render={() => (
-              <div className="App">
+              //<div className="App">
                 <SignIn />
-              </div>
+              //</div>
             )}
           />
           <Route
