@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import '../stylesheets/LoginText.css';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import "../stylesheets/LoginText.css";
 
 export class LoginText extends Component {
-  render () {
+  render() {
     return (
       <React.Fragment>
-      <div class="login-container">
+        <div class="login-container">
           <span class="login-text">Login</span>
-      </div>
-      </ React.Fragment>
+        </div>
+      </React.Fragment>
     );
   }
-};
+}
