@@ -1,8 +1,21 @@
 .rectangle-background {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  margin-left: 31em;
+  position: absolute;
+  width: 65%;
+  height: 100%;
+  margin-left: 35%;
+  padding: 5%;
   background-color: #0e67b1;
-  z-index: -1;
+}
+td {
+  padding: 3%;
+}
+.vMiddle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+button {
+  border-style: hidden;
 }

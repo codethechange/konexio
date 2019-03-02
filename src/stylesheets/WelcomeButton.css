@@ -39,14 +39,13 @@
 }
 
 .mentor-container {
-    position: fixed;
-    bottom: 9.156em;
-    right: 48.438em;
-    
+  position: fixed;
+  bottom: 9.156em;
+  right: 48.438em;
 }
 
 .mentee-container {
-    position: fixed;
-    bottom: 9.156em;
-    right: 16.313em;
+  position: fixed;
+  bottom: 9.156em;
+  right: 16.313em;
 }
