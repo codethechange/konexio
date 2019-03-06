@@ -1,7 +1,7 @@
 .login-container {
-  position: fixed;
+  /* position: fixed;
   right: 28.5em;
-  bottom: 25.938em;
+  bottom: 35em; */
 }
 
 .login-text {
@@ -15,5 +15,5 @@
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #000000;
+  color: #ffffff;
 }
