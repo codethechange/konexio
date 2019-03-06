@@ -1,21 +1,16 @@
-import React, { Component } from 'react';
-import { SignInButton } from '../components/SignInButton';
-import { LoginText } from '../components/LoginText';
-import { DontHaveAcctButton } from '../components/DontHaveAcctButton';
-import { ForgotPasswordButton } from '../components/ForgotPasswordButton';
+import React, { Component } from "react";
+import { RectangleBackground } from "../components/RectangleBackground";
+import { Logo } from "../components/Logo";
 
 export default class SignIn extends Component {
-  state = {
-  }
+  state = {};
 
-  render () {
-      return (
-        <div>
-        <SignInButton />
-        <LoginText />
-        <DontHaveAcctButton />
-        <ForgotPasswordButton />
-        </div>
-      )
-   }
+  render() {
+    return (
+      <div>
+        <RectangleBackground />
+        <Logo />
+      </div>
+    );
+  }
 }
