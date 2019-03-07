@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { WelcomeButton } from '../components/WelcomeButton';
-export default class Welcome extends Component { 
-  state = { 
+import { WelcomeText } from '../components/WelcomeText';
+import welcome from '../images/welcome.png';
+import '../stylesheets/Welcome.css';
+export default class Welcome extends Component {
+  state = {
   }
 
-  render () {                                   
+  render () {
       return (
         <React.Fragment>
+            <WelcomeText/>
             <div>
-                <h1> This is the welcome page. </h1>
+                <img src={welcome} className="resize" />
             </div>
             <WelcomeButton />
         </React.Fragment>
