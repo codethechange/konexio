@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
-export default class MenteeSignUp extends Component { 
-  state = { 
+import { MenteeSignUpFirstPage } from '../components/MenteeSignUpFirstPage';
+export default class MenteeSignUp extends Component {
+  state = {
   }
 
-  render () {                                   
+  render () {
       return (
+        <React.Fragment>
         <div>
            <h1> This is the mentee signup page. </h1>
         </div>
+        <MenteeSignUpFirstPage />
+        </React.Fragment>
       )
    }
 }
